@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/calculadora_fondo"
+    tools:context=".MainActivity">
+
+    <!-- Contenedor principal vertical -->
+    <LinearLayout
+        android:id="@+id/layoutPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <!-- Bloque superior-->
+        <LinearLayout
+            android:id="@+id/layoutSuperior"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+            <include layout="@layout/item_pantalla" />
+        </LinearLayout>
+
+        <!-- Bloque inferior-->
+        <LinearLayout
+            android:id="@+id/layoutInferior"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Fila 1-->
+            <include
+                android:id="@+id/fila1"
+                layout="@layout/item_fila_1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <!-- Fila 2-->
+            <include
+                android:id="@+id/fila2"
+                layout="@layout/item_fila_2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <!-- Fila 3-->
+            <include
+                android:id="@+id/fila3"
+                layout="@layout/item_fila_3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <!-- Fila 4-->
+            <include
+                android:id="@+id/fila4"
+                layout="@layout/item_fila_4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <!-- Fila 5-->
+            <include
+                android:id="@+id/fila5"
+                layout="@layout/item_fila_5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

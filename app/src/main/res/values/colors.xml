@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="calculadora_fondo">#000000</color>
+    <color name="calculadora_texto">#FFFFFF</color>
+    <color name="btn_funcion_bg">#A5A5A5</color>
+    <color name="btn_funcion_text">#000000</color>
+    <color name="btn_numero_bg">#333333</color>
+    <color name="btn_numero_text">#FFFFFF</color>
+    <color name="btn_operacion_bg">#FF9F0A</color>
+    <color name="btn_operacion_text">#FFFFFF</color>
+</resources>
